@@ -28,8 +28,7 @@ button {
 }
 
 .site-header,
-main,
-.site-footer {
+main {
   width: min(1180px, calc(100% - 64px));
   margin: 0 auto;
 }
@@ -74,7 +73,6 @@ main,
   padding: 112px 0 126px;
   max-width: 760px;
 }
-.eyebrow,
 .lightbox-location {
   margin: 0 0 22px;
   color: var(--accent);
@@ -225,21 +223,6 @@ h1 em {
   opacity: 0.8;
 }
 
-.site-footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0 35px;
-  color: var(--muted);
-  border-top: 1px solid var(--line);
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-.site-footer b {
-  color: var(--accent);
-  font-size: 16px;
-}
-
 .lightbox {
   width: min(940px, calc(100% - 32px));
   padding: 0;
@@ -296,8 +279,7 @@ h1 em {
 
 @media (max-width: 700px) {
   .site-header,
-  main,
-  .site-footer {
+  main {
     width: min(100% - 36px, 1180px);
   }
   .site-header {
@@ -338,8 +320,5 @@ h1 em {
   }
   .item-caption strong {
     font-size: 15px;
-  }
-  .site-footer {
-    font-size: 9px;
   }
 }
